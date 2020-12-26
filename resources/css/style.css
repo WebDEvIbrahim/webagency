@@ -1,0 +1,592 @@
+/* =============== */
+/* BASIC SETUP */
+/* =============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1a1a1a;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    /*google font family goes here according to google font link font*/
+    /*google font*/
+    font-family: 'Libre Franklin', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+    font-size: 1.6rem;
+}
+.row {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 8rem 0;
+
+}
+
+.box {
+    padding: 1%;
+}
+/*============heading tag ==========******/
+h1 {
+    font-size: 2.8rem;
+    color: #1e1e1e;
+}
+
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #1e1e1e;
+
+}
+
+
+
+h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2rem;
+
+}
+.btn {
+    font-size: 1.6rem;
+    color: #fff;
+    background: linear-gradient(to right, #0a8ffc, #511de5);
+    padding: 1rem 5rem;
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 2rem;
+}
+.btn:hover{
+    background: linear-gradient(to right,#511de5, #0a8ffc );
+}
+/*============little description for p tag paragrah==========******/
+.little-description {
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: #000;
+}
+
+/* ============================= */
+/* ----------------reuable comonent..... */
+/* ================================== */
+
+/***********reusable component*/
+ul {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+/*****************start header   section*/
+header{
+    background:url(img/hero-image.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    
+}
+/*************navbar designing****************************/
+.logo {
+    height: 10rem;
+    width: 10rem;
+}
+
+.col.span_1_of_2.box.main-nav-right {
+    
+    text-align: right;
+}
+
+
+.logo {
+    float: left;
+    
+}
+.main_nav {
+    float: right;
+    margin-top: 3.5rem;
+}
+.main_nav li {
+    margin-right: 2rem;
+}
+.main_nav li a {
+    position: relative;
+}
+.main_nav li a:hover{
+    color: #511de5;
+    transition: 0.5s ease all;
+}
+.main_nav li a::after{
+   content: "";
+height: 0.5rem;
+right: 100%;
+position: absolute;
+ background: linear-gradient(to right,#511de5, #0a8ffc );
+-webkit-transition: width 0.5s ease 0s, right 0.5s ease 0s;
+transition: width 0.5s ease 0s, right 0.5s ease 0s;
+width: 0;
+margin-top: 2.5rem;
+border-radius: 10rem;
+}
+.first-child:first-child::after{
+    width: 100%;
+    right: 0;
+}
+.main_nav li a:hover::after{
+    width:100%;
+    right: 0%;
+}
+.sign-in-btn {
+    margin-right: 5rem;
+    font-weight: 600;
+}
+.sign-in-btn:hover{
+    color: #511de5;
+    transition: 0.5s ease all;
+}
+/* ***************************side nav start----------------- */
+#side-nav{
+    width: 25rem;
+        height: 100vh;
+        position: fixed;
+        right: -25rem;
+        top: 0;
+        z-index: 99;
+        background: rgb(42 13 209 / 67%);
+        transition: 0.5s ease all;
+}
+#side-nav ul li{
+    margin: 5rem 2rem;
+    margin-top: 2.1rem;
+    display: block;
+}
+#side-nav ul li a{
+    color: #fff!important;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+i.fas.fa-bars.menu-icon {
+    color: #09142e;
+    font-size: 2.3rem;
+    cursor: pointer;
+    z-index: 9999;
+    position: fixed;
+    top: 4.5%;
+    left: 90%;
+    /* float:right; */
+}
+#side-nav ul li:first-child {
+    margin-top: 7rem;
+}
+#side-nav{
+    display: none;
+}
+#menu-btn{
+    display: none;
+}
+/* ***************************side nav end----------------- */
+.highlight-img {
+    position: absolute;
+    top: 70%;
+    height: 20rem;
+    width: 100%;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-40%,-50%);
+    width: 33%;
+    text-align: right;
+}
+.hero-text-box h1 {
+    margin-bottom: 4rem;
+}
+span {
+    color: #511de5;
+}
+.load-more-btn {
+    letter-spacing: 0.3rem;
+    background: #f2f2f2;
+    padding: 1.5rem 2rem;
+    margin-right: 0;
+    border-radius: 5rem;
+}
+.load-more-btn:hover{
+    background: linear-gradient(to right, #0a8ffc, #511de5);
+    color: #fff;
+}
+.hero-banner {
+    position: absolute;
+    top: 80%;
+    text-align: center;
+}
+.hero-banner h3{
+    color: #fff;
+    margin-top: 3rem;
+
+}
+.hero-banner {
+    position: absolute;
+    top: 80%;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+/*******partner section******************************/
+.partner-section{
+    position: relative;
+}
+.ilustration1 {
+    width: 100%;
+}
+.text-box2 {
+    width: 47%;
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    padding: 2rem;
+}
+.text-box2 h1{
+    
+  font-size: 7.2rem;
+background: linear-gradient(to right,#511de5, #0a8ffc );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    font-size: 10rem;
+    margin-bottom: 0;
+    float: left;
+    
+}
+
+.text-box2 img {
+    width: 100%;
+}
+
+
+.little-description.productivity {
+    margin-top: 8rem;
+    margin-left: 25rem;
+}
+/************************************/
+.design-section{
+   position: relative;
+    /* background:; */
+}
+.little-bacground-section img{
+    width: 100%;
+}
+.ellipse-inside {
+    position: absolute;
+    top: 22%;
+    width: 30%;
+    left: 18%;
+}
+
+.ellipse-inside p, h3{
+    color: #fff;
+}
+.ellipse-inside p{
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+.intro-box{
+    margin-top: 7rem;
+}
+.intro-box h1{
+    margin-bottom: 5rem;
+}
+.right-box2 img{
+    width: 100%;
+}
+.right-box1 img {
+    width: 2rem;
+    height: auto;
+}
+.right-box1 img {
+    width: 2rem;
+    height: auto;
+    float: left;
+    margin-right: 1.5rem;
+}
+.right-box1 h3 {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.right-box1 p{
+    margin-bottom: 2rem;
+    line-height: inherit;
+    
+}
+.btn.craft {
+    letter-spacing: 0.5rem;
+}
+
+.row-wrapper1 {
+    margin-top: 10rem;
+}
+.right-img1 {
+    margin-top: 2rem;
+    box-shadow: 0rem 0.1rem 0.3rem 0.2rem rgba(0, 0, 0, 0.14);
+}
+.feedback-section{
+    text-align: center;
+}
+.feedback-box {
+    margin: 0 auto;
+    width: 60%;
+}
+.feedback-box h2{
+    font-size: 3.8rem;
+}
+.feedback-box p{
+    margin-bottom: 10rem;
+    color: #000;
+}
+.feedback-section h3{
+    color: #000;
+}
+
+.little-description.cool {
+    margin-top: 3rem;
+}
+.row.feedback-box2 {
+    margin-top: 11rem;
+}
+.row.feedback-box2 h2{
+    font-size: 3.8rem;
+    margin-bottom: 5rem;
+}
+.row.feedback-box3 p{
+    margin-bottom: 15rem;
+}
+.row.feedback-box3 h3{
+    font-size: 1.5rem;
+}
+.row.feedback-box3 h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.row.feedback-box3 p.pushing{
+    position: relative;
+}
+.row.feedback-box3 p.pushing::after {
+    content: " ";
+    background: #f6f6f6;
+    width: 100%;
+    right: 0;
+    margin-top: 14rem;
+    position: absolute;
+    height: 0.2rem;
+}
+.awesome-box{
+    opacity: 0.5;
+}
+.col.span_1_of_4.box.awesome-box:hover {
+    opacity: 1;
+}
+.awesome-box:hover{
+    box-shadow: 0rem 0.1rem 0.3rem 0.2rem rgba(0, 0, 0, 0.14);
+    transition: 0.5s ease all;
+}
+
+.awesome-box:hover p.pushing::after{
+     background: linear-gradient(to right, #0a8ffc, #511de5);
+    transition: 0.5s ease all;
+    
+}
+.linkin{
+    margin-bottom: 2rem !important;
+}
+.span1{
+    color: #000;
+}
+.awesome-box:hover .span1 {
+  background: linear-gradient(to right,#511de5, #0a8ffc );
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/*************footer section****************************/
+footer{
+    margin-bottom: 0;
+    background: url(img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+    border-top: 0.2rem solid #ddd;
+   
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+    margin-top: 3rem;
+    
+}
+.foot-cont-wrapper {
+    background: #ff3946;
+}
+.foot-cont-wrapper {
+    background: #fff;
+    padding: 1rem 2rem;
+    width: 60%;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    margin-bottom: 10rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.foot-cont-wrapper h2{
+    text-align: center;
+    margin-top: 5rem;
+}
+.footer-text-box h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    color: #00f;
+    margin-bottom: 2rem;
+}
+
+.footer-text-box p{
+    margin-bottom: 5rem;
+}
+.panel p{
+    margin-bottom: 1rem;
+}
+.row.foot-main-nav {
+    padding-bottom: 3rem;
+}
+.foot-nav li{
+    margin-right: 2rem;
+}
+.foot-nav a {
+    color: #fff;
+    position: relative
+}
+.foot-nav a::after{
+  content: "";
+height: 0.5rem;
+right: 100%;
+position: absolute;
+ background: linear-gradient(to right,#511de5, #0a8ffc );
+-webkit-transition: width 0.5s ease 0s, right 0.5s ease 0s;
+transition: width 0.5s ease 0s, right 0.5s ease 0s;
+width: 0;
+margin-top: 2.5rem;
+border-radius: 10rem;
+    
+}
+.foot-nav a:hover::after{
+    width: 100%;
+    right: 0;
+}
+
+.foot-main-nav p{
+    color: #fff;
+}
+#up{
+   
+    color: linear-gradient(to right, #0a8ffc, #511de5);
+    padding: 1rem;
+    font-weight: 900;
+    background: #fff;
+    
+    border-radius: 0.5rem;
+    bottom: 2rem;
+    position: fixed;
+    right: 5rem;
+    z-index: 99;
+    border: 0.1rem solid #511de5;
+    cursor: pointer;
+/*    display: none;*/
+    
+}
+#up:hover{
+    background: linear-gradient(to right, #0a8ffc, #511de5);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

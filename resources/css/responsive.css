@@ -1,0 +1,138 @@
+@media  screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width: 1024px){
+    ul.main_nav {
+        display: none;
+    }
+    a.sign-in-btn {
+        display: none;
+    }
+    #side-nav{
+        display: block;
+    }
+    #menu-btn{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
+    .hero-banner{
+        width: 95%;
+    }
+    .row{
+        margin:0 3rem;
+    }
+    html {
+        font-size: 55%;
+        scroll-behavior: smooth;
+    }
+    .little-description.productivity{
+        margin-left: 21rem;
+    }
+    .try{
+        display: none;
+    }
+    .hero-text-box {
+        position: absolute;
+        top: 39%;
+        left: 35%;
+        transform: translate(-40%,-50%);
+        width: 74%;
+        text-align: right;
+    }
+    header {
+        background: url(img/hero-image.png);
+        background-repeat: no-repeat;
+        /* background-position: center bottom; */
+        height: 100vh;
+        background-size: contain;
+        position: relative;
+    }
+    .hero-text-box{
+        left: 33%;
+    }
+    .hero-banner{
+        top: 85%;
+    }
+    .text-box2 {
+        width: 74%;
+        text-align: left;
+        position: absolute;
+        top: 93px;
+        left: 10%;
+        padding: 2rem;
+    }
+    .text-box2 h2{
+        font-size: 2.5rem;
+    }
+    .text-box2 h1{
+        font-size: 5rem;
+    }
+    .little-description.productivity {
+        margin-left: 11rem;
+        margin-top: 3rem;
+    }
+    img.clinetlogo_new {
+        width: 12rem;
+    }
+    .col.span_1_of_4.box.new-edit {
+        width: 23.8%;
+    }
+    .design-section{
+        padding-top: 0;
+    }
+    .ellipse-inside {
+        position: absolute;
+        top: 11%;
+        width: 43%;
+        left: 40%;
+    }
+    .intro-box {
+        margin-top: 7rem;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .feedback-box{
+        width: 90%;
+    }
+    .feedback-box p{
+        margin-bottom: 0;
+    }
+    .little-description.cool {
+        margin-top: 2rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .row.feedback-box2{
+        margin-top: 3rem;
+    }
+    .col.span_1_of_4.box.awesome-box {
+        width: 50%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 1rem;
+    }
+    .row.feedback-box3 p{
+        margin-bottom: 2rem;
+    }
+    .row.feedback-box3 p.pushing::after{
+        margin-top: 3rem;
+    }
+    .foot-cont-wrapper{
+        width: 95%;
+        text-align: center;
+    }
+    prime {
+        width: 49.2%;
+       
+    }
+    .foot-nav a{
+        font-size: 1.2rem;
+    }
+    p.little-description.love {
+        font-size: 0.8rem;
+        margin-top: -1rem;
+        float: right;
+    }
+}
